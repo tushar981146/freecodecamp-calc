@@ -16,7 +16,7 @@ function App() {
   
 
     const regex = /\d+\.\d+\.\d+/
-    const regex_2 = /^\d\*\-\+\d$/
+    const regex_2 = /\d\*\-\+\d$/
 
 
     const lastVal = data.slice(-1) + nums
@@ -35,6 +35,7 @@ function App() {
         
         
         const updatedData = prev.replace(/\.\d+\./, '.' + nums + nums )
+       
         return updatedData
       }
       else if(prev.charAt(0) === '0') {
