@@ -57,3 +57,16 @@ button:active{
 .operator-btn:active{
   background-color: hsl(35, 100%, 75%);
 }
+
+::-webkit-scrollbar {
+    display: none;
+  }
+  
+* {
+  scrollbar-width: none !important;
+}
+
+/* Hide scrollbar for IE & Edge */
+* {
+  -ms-overflow-style: none !important;
+}
